@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyễn Hồng Phong</title>
+    <script src="https://kit.fontawesome.com/8f7adf1dc3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2 class="logo">Animal</h2>
+            <nav class="navigation">
+                <a href="#">Trang chủ</a>
+                <a href="#">Diễn đàn</a>
+                <a href="#">Giới thiệu</a>
+                <a href="#">Sự kiện</a>
+                <button class="btnLogin-popup">Đăng nhập</button>
+            </nav>
+      </header>
+      <div class="wrapper">
+            <span class="icon-close"><i class="fas fa-times"></i></span>
+            <!--Đăng Nhập-->
+        <div class="form-box login">
+             <h2>Đăng Nhập</h2>
+             <form action="#">
+                <div class="input-box">
+                    <span class="icon"><i class="fa-regular fa-envelope"></i></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><i class="fa-regular fa-lock"></i></span>
+                    <input type="password" required>
+                    <label>Mật Khẩu</label>
+                </div>
+                <div class="remember-forgot">
+                    <label ><input type="checkbox">Nhớ mật khẩu của tôi</label>
+                    <a href="#">Quên mật Khẩu</a>
+                </div>
+                <button type="submit" class="btn">Đăng Nhập</button>
+                <div class="login-register">
+                    <p>Chưa có mật Khẩu?<a href="#" class="register-link"> Tạo Tài Khoản</a></p>
+                </div>
+             </form>
+        </div>
+        <!--đăng kí-->
+        <div class="form-box register">
+            <h2>Đăng ký </h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><i class="fa-regular fa-user"></i></span>
+                    <input type="text" required>
+                    <label>Tên Tài Khoản</label>
+                </div>
+               <div class="input-box">
+                   <span class="icon"><i class="fa-regular fa-envelope"></i></span>
+                   <input type="email" required>
+                   <label>Email</label>
+               </div>
+               <div class="input-box">
+                   <span class="icon"><i class="fa-regular fa-lock"></i></span>
+                   <input type="password" required>
+                   <label>Mật Khẩu</label>
+               </div>
+               <div class="remember-forgot">
+                   <label ><input type="checkbox">Tôi đồng ý </label>
+                   <a href="#">Quên mật Khẩu</a>
+               </div>
+               <button type="submit" class="btn">Đăng ký</button>
+               <div class="login-register">
+                   <p>Đã có tài khoản?<a href="#" class="login-link">   Đăng Nhập</a></p>
+               </div>
+            </form>
+       </div>
+
+      </div>
+   <!-- quang cao góc phải bên dưới màn hình -->
+    <script type="text/javascript">
+        function hide_float_right() {
+            var content = document.getElementById('float_content_right');
+            var hide = document.getElementById('hide_float_right');
+            if (content.style.display == "none")
+            {content.style.display = "block"; hide.innerHTML = '<a href="javascript:hide_float_right()">Tắt Quảng Cáo [X]</a>'; }
+                else { content.style.display = "none"; hide.innerHTML = '<a href="javascript:hide_float_right()">Xem Quảng Cáo</a>';
+            }
+            }
+        </script>
+        <style>
+        .float-ck { position: fixed; bottom: 0px; z-index: 9000}
+        * html .float-ck {position:absolute;bottom:auto;top:expression(eval (document.documentElement.scrollTop+document.docum entElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0))) ;}
+        #float_content_right {border: 1px solid #01AEF0;}
+        #hide_float_right {text-align:right; font-size: 11px;}
+        #hide_float_right a {background: #01AEF0; padding: 2px 4px; color: #FFF;}
+        </style>
+        <div class="float-ck" style="right: 0px" >
+        <div id="hide_float_right">
+        <a href="javascript:hide_float_right()">Tắt Quảng Cáo [X]</a></div>
+        <div id="float_content_right"> 
+                  <center>  <img src="img/LogoM.jpg " height="50em"  alt=""> </center>
+        </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<style type="text/css">
+#popup-giua-man-hinh .headerContainer,#popup-giua-man-hinh .bodyContainer,#popup-giua-man-hinh .footerContainer{max-width:960px;margin:0 auto;background:#FFF}
+#popup-giua-man-hinh .padding{padding:20px}
+#popup-giua-man-hinh .bodyContainer{min-height:500px}
+#popup-giua-man-hinh .popUpBannerBox{position:fixed;background:rgba(0,0,0,0.9);width:100%;height:100%;top:0;left:0;color:#FFF;z-index:999999;display:none}
+#popup-giua-man-hinh .popUpBannerInner{max-width:300px;margin:0 auto}
+#popup-giua-man-hinh .popUpBannerContent{position:fixed;top:150px}
+#popup-giua-man-hinh .closeButton{color:red;text-decoration:none;font-size:18px}
+#popup-giua-man-hinh a.closeButton{float:right}
+</style>
+<div id="popup-giua-man-hinh">
+<div class="popUpBannerBox">
+ <div class="popUpBannerInner">
+  <div class="popUpBannerContent">
+   <p><a href="#" class="closeButton">Close</a></p>
+
+<!-- ==================== CODE HIỂN THỊ QUẢNG CÁO ====================-->
+
+          <a href="https://www.facebook.com/NH.Phong2357"><img src="img/giphy.gif" height="150em" /></a>
+
+<!-- ==================== END HIỂN THỊ QUẢNG CÁO ====================-->
+  </div>
+ </div>
+</div>
+<script type="text/javascript">
+ function showPopUpBanner() {
+  $('.popUpBannerBox').fadeIn("2000");
+ }
+ setTimeout(showPopUpBanner, 1000); 
+
+ $('.popUpBannerBox').click(function(e) {
+  if ( !$(e.target).is('.popUpBannerContent, .popUpBannerContent *' ) ) {
+   $('.popUpBannerBox').fadeOut("2000");
+   return false;
+  }
+ });
+ $('.closeButton').click(function() {
+  $('.popUpBannerBox').fadeOut("2000");
+  return false;
+ });
+
+</script>
+    <script src="script.js"> </script>
+
+</div> 
+</body>
+</html>
